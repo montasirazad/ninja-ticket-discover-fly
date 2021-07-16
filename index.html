@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <!--Header and Menu Section-->
+    <header class="container">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a class="active" href="#">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Booking Section-->
+    <main class="main-content container">
+        <div id='b-form' class="booking-form">
+            <h3>Booking Flights</h3>
+            <div class="input-group">
+                <label for="">Flying From</label>
+                <input class="inp-style" type="text" name="" placeholder="Dhake, Bangladesh">
+            </div>
+            <div class="input-group">
+                <label for="">Flying To</label>
+                <input class="inp-style" type="text" name="" placeholder="New York, United States">
+            </div>
+            <div class="inputs">
+                <div class="input-group">
+                    <label" for="">Departure</label>
+                        <input class=" " type="date" name="">
+                </div>
+                <div class="input-group">
+                    <label for="">Return</label>
+                    <input class=" " type="date" name="">
+                </div>
+            </div>
+            <div class="input-group f-class">
+                <div>
+                    <label for="">First Class ($150)</label>
+                    <input id="ticket-field" class="ticket-field" type="number" min='0' value='0'>
+                </div>
+                <div class="plus-minus-btn">
+                    <button id='firstClassAdd' class="btn btn-outline-success btn-sm ">Add</button>
+                    <button id='firstClassMinus' class="btn btn-outline-danger btn-sm ">Remove</button>
+                </div>
+            </div>
+
+            <div class="input-group f-class">
+                <div>
+                    <label for="">Economy ($100)</label><br>
+                    <input id="economy-ticket-field" class="ticket-field" type="number" min='0' value='0'>
+
+                </div>
+                <div class="plus-minus-btn">
+
+                    <button id="economy-ticket-add" class="btn btn-outline-success btn-sm ">Add</button>
+                    <button id="economy-ticket-remove" class="btn btn-outline-danger btn-sm ">Remove</button> <br>
+
+                </div>
+                <button id="total-price" class="btn btn-dark btn-sm ">Total price</button><br><br>
+            </div>
+            <div class="calculations">
+                <div class="amount">
+                    <div class="left">
+                        <p>Subtotal</p>
+                    </div>
+
+                    <div class="right">
+                        <p id="sub-total">$</p>
+                    </div>
+                </div>
+
+                <div class="amount">
+                    <div class="left">
+                        <p>Charge 10% VAT</p>
+                    </div>
+                    <div class="right">
+                        <p id="vat">$</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="amount">
+                    <div class="left">
+                        <h4>Total</h4>
+                    </div>
+                    <div class="right">
+                        <p id='total-cost'>$</p>
+                    </div>
+                </div>
+            </div>
+
+            <button id='book-now' class="btn-style">Book Now</button>
+        </div>
+
+        <div class="booking-content">
+            <h1>discover <br> around the world</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias
+                veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt nobise
+                voluptatibus quam</p>
+        </div>
+        <div class='çonfirmed' id="confirm-booking">
+            <div class="card" style="width: 18rem;">
+                <img src="virgin-atlantic-john-rocha-1-760x570.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Booking successful</h5>
+                    <p class="card-text">With new hygiene measures, free Covid-19 cover* and fully flexible
+                        booking, your peace of mind starts the moment you begin dreaming.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li id="f-class-booked">  </li>
+                    <li id="b-class-booked"> </li>
+                    <li id="sub-total-paid"> </li>
+                    <li id="vat-paid"> </li>
+                    <li  id="final-cost"> </li>
+                    <li>Thanks for traveling with virjin airlines</li>
+                </ul>
+                <!-- <div class="card-body">
+                  <a href="#" class="card-link">Card link</a>
+                  <a href="#" class="card-link">Another link</a>
+                </div> -->
+            </div>
+
+        </div>
+
+        </section>
+
+        <!--Thank You-->
+        <script src="index.js"></script>
+</body>
+
+</html>
