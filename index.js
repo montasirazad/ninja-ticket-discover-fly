@@ -117,12 +117,12 @@ document.getElementById('book-now').addEventListener('click', function () {
 
     const ticketInput = document.getElementById('ticket-field');
     const ticketInputNum = parseInt(ticketInput.value);
-    document.getElementById('f-class-booked').innerText = 'First class ticket >>>>>:' + '$' + ticketInputNum
+    document.getElementById('f-class-booked').innerText = 'First class ticket >>>>>:'   + ticketInputNum
     const firsClassPrice = ticketInputNum * 150;
 
     const economyTicketInput = document.getElementById('economy-ticket-field');
     const economyTicketInputNum = parseInt(economyTicketInput.value);
-    document.getElementById('b-class-booked').innerText = 'Economy class ticket >>>>> :' + '$' + economyTicketInputNum;
+    document.getElementById('b-class-booked').innerText = 'Economy class ticket >>>>> :'  + economyTicketInputNum;
     const economyTicketPrice = economyTicketInputNum * 100;
     const subTotalPrice = firsClassPrice + economyTicketPrice;
     document.getElementById('sub-total-paid').innerText = 'Total ticket price >>>>>:' + '$' + subTotalPrice;
